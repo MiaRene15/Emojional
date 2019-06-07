@@ -10,11 +10,44 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    @IBAction func showMessage(_ sender: UIButton) {
+        var alertController = UIAlertController(title: "Happy", message: "You're Awesome!", preferredStyle: UIAlertController.Style.alert)
+        
+  alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
+    
+        
+    @IBAction func showMessageSad(_ sender: UIButton) {
+        var alertController = UIAlertController(title: "Sad", message: "Everything will be ok!", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func stress(_ sender: UIButton) {
+        var alertController = UIAlertController(title: "Stress", message: "Take a deep breath", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
 
-
+        
+    }
+    
+    @IBAction func bread(_ sender: UIButton) {
+        var alertController = UIAlertController(title: "Confidence (or Hungry?)", message: "Let's get this bread (bagette)!", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
 }
 
