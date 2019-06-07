@@ -10,14 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let emoijinal_emojis = ["😁": "happy", "🌋": "lava you" ]
+    let customMessages = ["happy": ["You are lovely", "Awesomeness!"], "lava you": ["Smile for 5 secs", "Shake it Off"]]
+   
+    let emoijinal_emojis = ["😁": "happy", "😭": "lava you"]
+    
+    
     
     @IBAction func showMessage(_ sender: UIButton) {
-        var alertController = UIAlertController(title: "Happy", message: "You're Awesome!", preferredStyle: UIAlertController.Style.alert)
         
-  alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        let random_num = Int.random(in: 0..<2)
         
-        present(alertController, animated: true, completion: nil)
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let emojiMessage = customMessages[emoijinal_emojis[selectedEmotion!]!]?[random_num]
+        
+        
+        let alertController = UIAlertController(title: "Happy", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+       present(alertController, animated: true, completion: nil)
         
     }
     
@@ -51,3 +62,4 @@ class ViewController: UIViewController {
 //
 //
 }
+

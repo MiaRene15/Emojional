@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="108"/>
                                 <state key="normal" title="😁"/>
                                 <connections>
-                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAx-BF-GAd"/>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6V-8D-2uY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-EY-Tb4">
@@ -47,10 +47,13 @@
                                 <state key="normal" title="😫"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn3-zs-H2c">
-                                <rect key="frame" x="242" y="84" width="117" height="141"/>
+                                <rect key="frame" x="209" y="84" width="117" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="108"/>
                                 <state key="normal" title="😭"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5z-3a-wef"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
